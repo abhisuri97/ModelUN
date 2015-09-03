@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <title>SMH-MUN</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+   
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Regular Bootstrap Load in ... -->
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+		<script src="js/preloader.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            
+             var fbpage = "https://graph.facebook.com/SMHMUN2015/posts?access_token=777569982324401|dciLz_Vx80uLsNMKj3Ku7siS9gg"
+          $.getJSON(fbpage, function (json) {
+              for (i=0, j=1; i<json.data.length, j<4;i++)
+{
+    var undef = "undefined";
+    var str = json.data[i].message;    
+    if(typeof(str)!='undefined'){
+     var newstr = "<div><p> "+str+"</p></div>";
+        console.log(j);
+        console.log(newstr);
+        $(".fbfeed div:nth-child("+(j+1)+")").append(newstr);
+        j++;
+        
+
+    }
+    
+    // Set the variables from the results array
+  
+   
+}});
+        </script>
+             <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+                <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <script src="js/googleMapInit.js"></script>
+
+                <script src="js/jquery.plugin.min.js"></script>
+
+		        <script src="js/jquery.countdown.min.js"></script>
+            
+        <!--Typical HTML5 Shim stuff...-->
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+<header id="head">
+    <script>$("#head").load("header.html");</script>
+    </header>
+    <a class="arrow-wrap" data-scroll href="#text-separator-timers" data-toggle="tooltip" title="" data-original-title="Scroll Down">
+    <span class="arrow" ></span> <!--Dont judge...couldn't figure out how to get this to css pos fix to body w/o taking it out of div-->
+</a>
+	<body id="bigWrapper" data-spy="scroll" data-target=".navbar-default" data-offset="100">
+
+        
+        <!--NOTE TO SELF: DO NOT DELETE THIS. PLEASE. (Personal Note: I took way too long to get this right)-->
+         <div class="container overlay overlay-slidedown">
+            
+            <div class="container overlay">
+                <div class="row">
+                        <div class="col-md-12 " style="z-index: 100">
+                            <a class="overlay-close">
+                            <img class="img-responsive center-block-epc" src="img/xsep-white.png" alt="close image"  data-toggle="tooltip" title="Click to exit">
+                            </a>
+                    </div>
+                    <div class="overlay-section">
+
+                    </div>
+                </div>
+             </div>   
+         </div>
+        <!--yay delete from here-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--NOW we are getting into the actual webpage-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section id="intro">
+            <div class="black-overlay"></div>
+            <div class="container valign">
+                <div class="row">
+                 <div class="col-md-12 text-center">
+                        <h1 style="color: #FFF">SMH-MUN </h1>
+                        <p></p>
+                     <h4 style="color:#FFF">An Annual Model UN Conference Hosted at Saint Mary's Hall</h4>
+                </div>	
+
+                    <div class="col-md-12 text-center">
+                        <a data-scroll href="about.html" class="btn btn-default btn-white" style= "font-size: 20px">Learn More</a>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* END Intro  */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section id="text-separator-timers">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-md-12 text-center">
+                	<h4>SMH MUN III Stats</h4>
+                </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper">
+                        <h1>
+                            <span class="timer1"></span>
+                        </h1>
+                        <p>Delegates Attended</p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper">
+                        <h1>
+                            <span class="timer2"></span>
+                        </h1>
+                        <p>Countries Represented</p>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper">
+                        <h1>
+                            <span class="timer3"></span>
+                        </h1>
+                        <p>Schools</p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center timerWrapper">
+                        <h1>
+                            <span class="timer4"></span>
+                        </h1>
+                        <p>Awards Given</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+     
+        <section id="letter" style="text-align: justify;
+    text-justify: inter-word;">
+            <div class="container-fluid">
+              <style>
+			  .col-centered {float:none; margin: 0 auto}
+			  .welcome-separator .col-centered p {font-weight: 400}
+			  </style>  
+                <div class="col-md-9 text-center col-centered">
+                    <h2 data-scroll-reveal="enter 0.2s">Post-Conference letter</h2>
+                    <img src="img/separatorBlack.png" class="img-responsive center-block separator" alt="separator">
+                    <h4>Dear Delegates, Sponsors, and Friends of <span>SMH-MUN,</span></h4>
+                    <p>Thank you to all the sponsors, delegates, and parents of the schools that attended this year’s Saint Mary’s Hall MUN conference. The intelligence, professionalism, and creativity exhibited by this year’s delegation was nothing short of extraordinary. Crisis committees took an exciting step forward, and the quality of debate in standardized committees was just as riveting. You have all amazed myself and the rest of the Secretariat with your work ethic and dedication to MUN. </p>
+
+<p>In addition, special congratulations are in order for all of our individual award winners, as well as the school recipients of our sweepstakes awards. Thank you all again, and we at SMH-MUN look forward to seeing you next year!</p>
+<p>
+Best regards,<br>
+Logan Guy<br>
+    Secretary General of SMH-MUN III
+                    </p>
+
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </section>
+         <section id="text-separator">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        
+                        <div style="padding:40px"><h1>Facebook Feed<br><br></h1>
+                        <a data-scroll href="https://www.facebook.com/SMHMUN2015" target="_blank" class="buttonfancy2">Visit our facebook</a></div>
+                        
+                        <div class="fbfeed col-md-10" style="float:none; margin: 0 auto;">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<script>
+         $(document).ready(function() {
+      $('.fbfeed').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+          dots:true,
+          arrows: false
+  })});
+		
+          
+      </script>
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* Counter */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* welcome SEPARATOR */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+       
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* about SECTION */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+       
+      
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* Extra Stuff*/-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="modal fade center2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal5Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          
+        <div class="modal-body" style="text-align:center">
+           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> 
+          <h2>Coming Soon</h2>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+
+        
+        
+
+        <script>
+            (function() {
+                var triggerBttn = document.getElementById( 'trigger-overlay' ),
+                    triggerBttnThree= document.getElementById('trigger-overlay-three'),
+                        overlay = document.querySelector( 'div.overlay' ),
+                        closeBttn = overlay.querySelector( 'a.overlay-close' );
+                transEndEventNames = {
+                    'WebkitTransition': 'webkitTransitionEnd',
+                    'MozTransition': 'transitionend',
+                    'OTransition': 'oTransitionEnd',
+                    'msTransition': 'MSTransitionEnd',
+                    'transition': 'transitionend'
+                },
+                        transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                        support = { transitions : Modernizr.csstransitions };
+
+                function toggleOverlay() {
+                    if( classie.has( overlay, 'open' ) ) {
+                        classie.remove( overlay, 'open' );
+                        classie.add( overlay, 'close' );
+                        var onEndTransitionFn = function( ev ) {
+                            if( support.transitions ) {
+                                if( ev.propertyName !== 'visibility' ) return;
+                                this.removeEventListener( transEndEventName, onEndTransitionFn );
+                            }
+                            classie.remove( overlay, 'close' );
+                        };
+                        if( support.transitions ) {
+                            overlay.addEventListener( transEndEventName, onEndTransitionFn );
+                        }
+                        else {
+                            onEndTransitionFn();
+                        }
+                    }
+                    else if( !classie.has( overlay, 'close' ) ) {
+                        classie.add( overlay, 'open' );
+                    }
+
+                    $("div.overlay").animate({ scrollTop: 0 }, "slow");
+                }
+
+                triggerBttn.addEventListener( 'click', toggleOverlay );
+                triggerBttnThree.addEventListener( 'click',toggleOverlay);
+
+
+                closeBttn.addEventListener( 'click', toggleOverlay );
+                return false;
+            })();
+
+
+        </script>
+
+        <script>
+             $.backstretch([
+                "img/bg1.jpg"
+                , "img/bg2.jpg"
+				, "img/bg3.jpg"
+				,"img/bg4.jpg"
+            ], {duration: 5000, fade: 250});
+        </script>
+	<script>
+            $(function () {
+                var austDay = new Date();
+                austDay = new Date(2015, 3 - 1, 22);
+                $('#countdown').countdown({until: austDay});
+            });
+        </script>
+        
+	</body>
+</html>

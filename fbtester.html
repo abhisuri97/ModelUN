@@ -1,0 +1,33 @@
+<html>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '777569982324401',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    
+<script>
+  var url = "https://graph.facebook.com/SMHMUN2015/feed?access_token=777569982324401|dciLz_Vx80uLsNMKj3Ku7siS9gg";
+ $.getJSON(url,function(data){
+  $.each(data, function(i, id){
+    $("div").append(id + " ");
+      });
+    });
+          </script>
+    
+<body>
+    
+    <div></div>
+</body>
+</html> 

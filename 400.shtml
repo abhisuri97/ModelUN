@@ -1,0 +1,18 @@
+<body>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900' rel='stylesheet' type='text/css'>
+    <style>
+    body { 
+  background: url(koala.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+    </style>
+
+    <h1 style="font-family:'Open Sans'; font-size: 200px; text-align:center; vertical-align: middle;color: #FFF; margin-top: 0px;margin-bottom: 0px" >400</h1>
+    <p style="font-family:'Open Sans'; font-size: 20px; text-align:center; vertical-align: middle;color: #FFF; margin-top: 0px;margin-bottom: 0px">Bad request...you didn't see anything<br><br><br><br> <a href="http://www.smhmun.org" style="color: #FFF">Return from whence you came</a></p>
+    
+    
+    </body>
